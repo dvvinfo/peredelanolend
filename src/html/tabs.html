@@ -4,7 +4,7 @@
     <button class="tabs__btn">Азия</button>
     <button class="tabs__btn">Америка</button>
   </div>
-  <div class="tabs__content">
+  <!-- <div class="tabs__content">
     <div class="tabs__pane tabs__pane_show">
       @@include('card.html', {city:"Стамбул", date: "29 ИЮЛЯ", link:"https://t.me/peredelanoconf_istanbul", img: "istanbul", description:"Мы радостно хотим сообщить — анонсируем early bird продажи на митап в Стамбуле по сладким ценам! Залетайте на ивент 29 июля, 2023г., 15.00 ждём вас!" })
       @@include('card.html', {city:"Сербия", date: "12 АВГУСТА", link:"https://t.me/peredelanoconfbelgrade", img: "belgrade", description:"Там всё, как мы любим - Дом с бассейном и отдельным оборудованным баром во дворе. Добраться можно на городском автобусе или на такси - это совсем рядом. У дома своя пристань (если кто-то вместо общественного транспорта и такси захочет доехать до нас на лодке/катере/водном мотоцикле, а что, а вдруг - можно сделать даже так!)" }) 
@@ -38,6 +38,21 @@
       @@include('card.html', {city:"Буэнос-Айрес", date: "02 СЕНТЯБРЯ", link:"https://t.me/peredelanoconfargentina", img: "argentina", description:"Анонсируем раннюю регистрацию, самая расслабленная, самая сплачивающая, и при этом самая полезная тусовка для русскоязычных айтишников — БУЭНОС-АЙРЕС, 02 сентября!"}) 
       @@include('card.html', {})
       @@include('card.html', {})
+    </div>
+  </div> -->
+
+  <div class="tabs__content">
+    <div class="tabs__pane tabs__pane_show">
+        @@loop('card.html', 'data/europe.json')
+      </div>
+    <div class="tabs__pane">
+        @@loop('card.html', 'data/asia.json')
+    </div>
+    <div class="tabs__pane">
+        @@loop('card.html', 'data/america.json'),
+    </div>
+    <div class="tabs__pane">
+        @@loop('card.html', 'data/afrika.json')
     </div>
   </div>
 </div>
