@@ -3,6 +3,9 @@
 /*main*/
 @import "./libs/variables.scss";
 @import "./libs/mixins.scss";
+html{
+    scroll-behavior: smooth;
+}
 .wrap {max-width: 1240px; width: 100%; margin: 0 auto; padding: 0 15px;}
 .row {display: flex; justify-content: space-between; flex-wrap: wrap}
 .button {

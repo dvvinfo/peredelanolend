@@ -115,6 +115,10 @@ picture > .img-fluid {
   margin: 0 auto !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrap {
   max-width: 1240px;
   width: 100%;
